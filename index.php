@@ -24,11 +24,13 @@
     </style>
 </head>
 <body>
+
 <div>
     <h1><?php echo $h1 ?></h1>
     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cumque debitis dolor ducimus, ex illum incidunt
         itaque libero perspiciatis placeat praesentium quo rem repellendus soluta totam vel velit veniam. Quas?</span>
     <p><?php echo $date ?></p>
 </div>
+
 </body>
 </html>
