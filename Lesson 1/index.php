@@ -1,7 +1,7 @@
 <?php
     $h1 = "Почти что заголовок";
     $title = "Скоро тут будет название страницы";
-    $date = date("d/m/y");
+    $dateShow = date("d/m/y");
 ?>
 
 <!doctype html>
@@ -29,7 +29,7 @@
     <h1><?=$h1; ?></h1>
     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cumque debitis dolor ducimus, ex illum incidunt
         itaque libero perspiciatis placeat praesentium quo rem repellendus soluta totam vel velit veniam. Quas?</span>
-    <p><?=$date; ?></p>
+    <p><?=$dateShow; ?></p>
 </div>
 
 </body>
