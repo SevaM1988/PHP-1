@@ -2,7 +2,12 @@
     $a = 1;
     $b = 2;
 
-    $a+=+$b-$b=$a;
+    echo "\$a = $a<br>";
+    echo "\$b = $b<br>";
 
-    echo "$a\n";
-    echo $b;
+    $a = $a + $b;
+    $b = $a - $b;
+    $a = $a - $b;
+
+    echo "\$a = $a<br>";
+    echo "\$b = $b";
