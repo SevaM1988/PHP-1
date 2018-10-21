@@ -14,25 +14,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        div {
-            border: 2px solid royalblue;
-            display: flex;
-            justify-content: center;
-            border-radius: 5px;
-        }
-    </style>
+    <style></style>
     <title>Gallery</title>
 </head>
 <body>
 
-<div>
+<!--<div id="gallery">-->
+<!--    --><?php
+//    for ($i = 0; $i < count($small); $i++)  {?>
+<!--    <img src="--><?//=$dirSmall."/".$small[$i]?><!--" alt="" onclick = 'openImageWindow("--><?//=$dirBig."/".$big[$i]?>//");'>
+//    <?php //} ?>
+<!--</div>-->
+
+<div id="modal_form">
+    <span id="modal_close">X</span>
     <?php
     for ($i = 0; $i < count($small); $i++)  {?>
-    <img src="<?=$dirSmall."/".$small[$i]?>" alt="" onclick = 'openImageWindow("<?=$dirBig."/".$big[$i]?>");'>
+        <a href="#" id="go"><img src="<?=$dirSmall."/".$small[$i]?>" alt=""></a>
     <?php } ?>
 </div>
-<script src="script.js">
-</script>
+<div id="overlay"></div>
+
+<!--<script src="script.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="modalWindow.js"></script>
 </body>
 </html>
