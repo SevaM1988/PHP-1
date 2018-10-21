@@ -19,24 +19,24 @@
 </head>
 <body>
 
-<!--<div id="gallery">-->
-<!--    --><?php
-//    for ($i = 0; $i < count($small); $i++)  {?>
-<!--    <img src="--><?//=$dirSmall."/".$small[$i]?><!--" alt="" onclick = 'openImageWindow("--><?//=$dirBig."/".$big[$i]?>//");'>
-//    <?php //} ?>
-<!--</div>-->
-
-<div id="modal_form">
-    <span id="modal_close">X</span>
+<div id="gallery">
     <?php
     for ($i = 0; $i < count($small); $i++)  {?>
-        <a href="#" id="go"><img src="<?=$dirSmall."/".$small[$i]?>" alt=""></a>
+    <img src="<?=$dirSmall."/".$small[$i]?>" alt="" onclick = 'openImageWindow("<?=$dirBig."/".$big[$i]?>//");'>
     <?php } ?>
 </div>
-<div id="overlay"></div>
 
-<!--<script src="script.js"></script>-->
+<!--<div id="modal_form">-->
+<!--    <span id="modal_close">X</span>-->
+<!--    --><?php
+//    for ($i = 0; $i < count($small); $i++)  {?>
+<!--        <a href="#" id="go"><img src="--><?//=$dirSmall."/".$small[$i]?><!--" alt=""></a>-->
+<!--    --><?php //} ?>
+<!--</div>-->
+<!--<div id="overlay"></div>-->
+
+<script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="modalWindow.js"></script>
+<!--<script src="modalWindow.js"></script>-->
 </body>
 </html>
