@@ -5,7 +5,7 @@ return [
     'db' => [
         'user' => 'root',
         'password' => 'root',
-        'host' => 'mysql',
+        'host' => 'localhost',
         'database' => 'geek_project',
     ]
 ];
